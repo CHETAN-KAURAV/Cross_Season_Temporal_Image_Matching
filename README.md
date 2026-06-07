@@ -182,6 +182,8 @@ cross_season_matching/
 ├── compare_methods.py
 ├── profiling.py
 ├── alignment_error_gt.py
+├── report.pdf
+├── requirements.txt
 └── README.md
 ```
 
