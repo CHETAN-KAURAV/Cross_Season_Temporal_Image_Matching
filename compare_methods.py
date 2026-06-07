@@ -39,9 +39,7 @@ for summer_name, winter_name in zip(
 
     try:
 
-        # -------------------
         # ORB
-        # -------------------
 
         pts1, pts2 = orb.match_images(
             summer_path,
@@ -59,9 +57,7 @@ for summer_name, winter_name in zip(
             pts2
         )
 
-        # -------------------
         # LightGlue
-        # -------------------
 
         mkpts0, mkpts1 = (
             lightglue.match_images(

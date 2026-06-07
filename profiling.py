@@ -7,9 +7,8 @@ from src.homography import compute_homography
 summer_path = "data/summer/images-00900.png"
 winter_path = "data/winter/images-00900.png"
 
-# ---------------------------------
+
 # Data Loading
-# ---------------------------------
 
 t0 = time.perf_counter()
 
@@ -18,9 +17,8 @@ img2 = cv2.imread(winter_path)
 
 load_time = (time.perf_counter() - t0) * 1000
 
-# ---------------------------------
+
 # Feature Extraction + Matching
-# ---------------------------------
 
 matcher = FeatureMatcher()
 
@@ -33,9 +31,7 @@ mkpts0, mkpts1 = matcher.match_images(
 
 matching_time = (time.perf_counter() - t1) * 1000
 
-# ---------------------------------
 # Matrix Estimation
-# ---------------------------------
 
 t2 = time.perf_counter()
 
