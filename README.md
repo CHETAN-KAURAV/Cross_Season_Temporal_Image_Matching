@@ -79,7 +79,7 @@ Advantages:
 * Learned visual features
 * Robust to illumination changes
 * Robust to seasonal appearance changes
-
+![SuperPoint Extracted Keypoints](outputs/SuperPoint_Keypoints.png)
 Configuration:
 
 ```python
@@ -87,7 +87,6 @@ max_num_keypoints = 1024
 ```
 
 ---
-
 ## 2. Feature Matching
 
 LightGlue performs feature matching between descriptor sets extracted from the Summer and Winter images.
@@ -99,10 +98,7 @@ Advantages:
 * Efficient matching pipeline
 
 Output:
-
-```text
-Matched keypoint pairs
-```
+![Matched keypoint pairs](outputs/matches/match_00900.png)
 
 ---
 
@@ -151,7 +147,7 @@ cv2.warpPerspective()
 to generate aligned images.
 
 Outputs:
-
+![Overlay Visualization](outputs/warped/overlay_00900.png)
 * Warped image
 * Overlay visualization
 
